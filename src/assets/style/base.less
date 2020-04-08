@@ -1,0 +1,118 @@
+@charset "utf-8";
+
+/*
+* Css3 reset base.
+* @Author nlwy update 2016-03-17
+* Copyright caikr 2014-2016.
+*/
+
+em,
+strong,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+i,
+b {
+  font-style: normal;
+  font-weight: normal;
+}
+
+a {
+  text-decoration: none;
+  cursor: pointer;
+  color: inherit;
+  transition: color .5s;
+  &:hover {
+    text-decoration: none;
+  }
+  &>* {
+    cursor: pointer;
+  }
+}
+
+a:link,
+a:visited,
+a:active,
+a:focus {
+  outline: none;
+}
+
+table {
+  border-spacing: 0;
+  border-collapse: collapse;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  line-height: 1;
+}
+
+nav,
+ul li,
+ol li {
+  list-style: none;
+}
+
+* {
+  border: 0px;
+  margin: 0px;
+  padding: 0px;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  -webkit-box-sizing: border-box;
+  /*宽度扩展到边框宽度              */
+  box-sizing: border-box;
+  -webkit-touch-callout: none; // user-select: none;
+  /*页面元素不可复制     */
+  -webkit-overflow-scrolling: touch;
+  /*允许独立的滚动区域和触摸回弹     */
+}
+
+input,
+textarea,
+button,
+select {
+  outline: none;
+  background: none;
+  border-radius: 0px;
+  -webkit-appearance: none;
+  /*ios清除默认样式                */
+  -webkit-user-select: text;
+  /*文本可操作形式                  */
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  /*默认按下效果隐藏                 */
+  -webkit-touch-callout: none;
+  /*禁止长按弹出工具栏              */
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+
+select {
+  appearance: none;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+}
+
+select::-ms-expand {
+  display: none;
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+}
+
+
+[v-cloak] {
+  display: none;
+}

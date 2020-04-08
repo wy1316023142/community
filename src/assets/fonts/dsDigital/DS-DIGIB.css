@@ -1,0 +1,14 @@
+@font-face {
+    font-family: "DS-DIGIB";
+    src: url("DS-DIGIB.eot"); /* IE9 */
+    src: url("DS-DIGIB.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
+
+    url("DS-DIGIB.woff") format("woff"), /* chrome、firefox */
+    url("DS-DIGIB.ttf") format("truetype"), /* chrome、firefox、opera、Safari, Android, iOS 4.2+ */
+
+    url("DS-DIGIB.svg#DS-DIGIB") format("svg"); /* iOS 4.1- */
+    font-style: normal;
+    font-weight: normal;
+}
+
+

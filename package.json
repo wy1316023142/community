@@ -1,0 +1,73 @@
+{
+  "name": "zhsq",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "serve": "vue-cli-service serve",
+    "build": "vue-cli-service build",
+    "lint": "vue-cli-service lint"
+  },
+  "dependencies": {
+    "@tinymce/tinymce-vue": "^3.0.1",
+    "axios": "^0.18.0",
+    "crypto-js": "^3.1.9-1",
+    "echarts": "^4.1.0",
+    "element-china-area-data": "^4.1.2",
+    "element-ui": "^2.9.1",
+    "file-saver": "^2.0.2",
+    "js-base64": "^2.5.1",
+    "js-md5": "^0.7.3",
+    "lodash": "^4.17.11",
+    "moment": "^2.24.0",
+    "register-service-worker": "^1.5.2",
+    "socket.io": "^2.2.0",
+    "sockjs-client": "^1.3.0",
+    "stompjs": "^2.3.3",
+    "video.js": "5.20.1",
+    "vue": "^2.6.6",
+    "vue-amap": "^0.5.8",
+    "vue-echarts-v3": "^1.0.19",
+    "vue-router": "^3.0.1",
+    "vuex": "^3.0.1",
+    "wangeditor": "^3.1.1",
+    "xlsx": "^0.15.1"
+  },
+  "devDependencies": {
+    "@vue/cli-plugin-babel": "^3.4.0",
+    "@vue/cli-plugin-eslint": "^3.4.0",
+    "@vue/cli-plugin-pwa": "^3.4.0",
+    "@vue/cli-service": "^3.4.0",
+    "@vue/eslint-config-airbnb": "^4.0.0",
+    "babel-eslint": "^10.0.1",
+    "eslint": "^5.8.0",
+    "eslint-plugin-vue": "^5.0.0",
+    "less": "^3.0.4",
+    "less-loader": "^4.1.0",
+    "script-loader": "^0.7.2",
+    "vue-template-compiler": "^2.5.21"
+  },
+  "eslintConfig": {
+    "root": true,
+    "env": {
+      "node": true
+    },
+    "extends": [
+      "plugin:vue/essential",
+      "@vue/airbnb"
+    ],
+    "rules": {},
+    "parserOptions": {
+      "parser": "babel-eslint"
+    }
+  },
+  "postcss": {
+    "plugins": {
+      "autoprefixer": {}
+    }
+  },
+  "browserslist": [
+    "> 1%",
+    "last 2 versions",
+    "not ie <= 8"
+  ]
+}

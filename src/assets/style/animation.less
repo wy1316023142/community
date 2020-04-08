@@ -1,0 +1,179 @@
+.animated {
+  animation-duration: 1s;
+  animation-fill-mode: both;
+  animation-iteration-count: infinite;
+}
+
+.bounceSoft {
+  animation-name: bounceSoft;
+}
+
+@keyframes wave1 {
+  0% {
+    opacity: 0;
+    transform: rotateX(65deg) scale(1);
+  }
+
+  100% {
+    opacity: 0.5;
+    transform: rotateX(65deg) scale(2);
+  }
+}
+
+@keyframes wave2 {
+  0% {
+    opacity: 0.5;
+    transform: rotateX(65deg) scale(1);
+  }
+
+  100% {
+    opacity: 0.8;
+    transform: rotateX(65deg) scale(2);
+  }
+}
+
+@keyframes wave3 {
+  0% {
+    opacity: 0.8;
+    transform: rotateX(65deg) scale(1);
+  }
+
+  100% {
+    opacity: 0;
+    transform: rotateX(65deg) scale(2);
+  }
+}
+
+@keyframes sonarEffectGold {
+  0% {
+    opacity: 0.3;
+  }
+  40% {
+    opacity: 0.5;
+    box-shadow: 0 0 0 2px rgba(244, 159, 118, 0.1), 0 0 10px 10px #f6f8fc, 0 0 0 10px rgba(244, 159, 118, 0.5);
+  }
+  100% {
+    box-shadow: 0 0 0 2px rgba(244, 159, 118, 0.1), 0 0 10px 10px #f6f8fc, 0 0 0 10px rgba(244, 159, 118, 0.5);
+    transform: rotateX(65deg) scale(3);
+    opacity: 0;
+  }
+}
+
+// 闪烁
+@keyframes twinkle {
+  from {
+    opacity: 0.5;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+// 弹跳
+@keyframes bounceSoft {
+  0%,
+  20%,
+  53%,
+  80%,
+  to {
+    animation-timing-function: cubic-bezier(.215, .61, .355, 1);
+    transform: translateZ(0)
+  }
+
+  40%,
+  43% {
+    animation-timing-function: cubic-bezier(.755, .05, .855, .06);
+    transform: translate3d(0, -10px, 0)
+  }
+
+  70% {
+    animation-timing-function: cubic-bezier(.755, .05, .855, .06);
+    transform: translate3d(0, -8px, 0)
+  }
+
+  90% {
+    transform: translate3d(0, -2px, 0)
+  }
+}
+
+// svg箭头组件用
+svg {
+  .arrow1 {
+    animation: exchangeColor 1s ease infinite;
+    animation-direction: alternate;
+  }
+  .arrow2 {
+    animation: exchangeColorRev 1s ease infinite;
+    animation-direction: alternate;
+  }
+}
+
+@keyframes exchangeColor {
+  from {
+    fill: #1A54A8;
+  }
+  to {
+    fill: #58B6E8;
+  }
+}
+
+@keyframes exchangeColorRev {
+  from {
+    fill: #58B6E8;
+  }
+  to {
+    fill: #1A54A8;
+  }
+}
+
+// 按钮涟漪效果
+@keyframes ripple {
+  to {
+    transform: scale(2);
+    opacity: 0;
+  }
+}
+
+.ripple {
+  position: absolute; // background: rgba(3, 58, 241, 0.16);
+  background: rgba(255, 255, 255, 0.16);
+  border-radius: 100%;
+  transform: scale(0);
+  pointer-events: none;
+  animation: ripple .75s ease-out;
+}
+
+[disabled],
+.disabled {
+  .ripple {
+    animation: none;
+  }
+}
+
+
+// 人脸登录用
+.bounce-enter,
+.bounce-leave-to {
+  opacity: 0;
+}
+
+@keyframes bounce-in {
+  0% {
+    top: 9px;
+  }
+  50% {
+    top: 290px
+  }
+  100% {
+    top: 9px;
+  }
+}
+
+@keyframes scanMask{
+  0% {
+    top: 0;
+  }
+  100% {
+    top: 100%;
+  }
+}
