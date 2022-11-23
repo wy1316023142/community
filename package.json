@@ -20,7 +20,7 @@
     "lodash": "^4.17.11",
     "moment": "^2.24.0",
     "register-service-worker": "^1.5.2",
-    "socket.io": "^2.2.0",
+    "socket.io": "^2.5.0",
     "sockjs-client": "^1.3.0",
     "stompjs": "^2.3.3",
     "video.js": "5.20.1",
